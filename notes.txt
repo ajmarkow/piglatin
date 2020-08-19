@@ -1,0 +1,11 @@
+Test: If word begins with a vowel, way is added.  
+Expectation: PigLatinTranslation(userwords) = each of users words + way
+
+Test: If word begins with one or more consanants, move all subsequent consanants to the end of the word.
+Expectation: PigLatinTranslation(userwords) = users inputs - first two consecutive consanants + ay
+
+Test: If word includes "qu", q and u are moved to the end of the word.
+Expectation: PigLatinTranslation("squeal") = ealsquay
+
+Test: If word begins with y, y is treated as a consanant. 
+Expectation: PigLatinTranslation("yours") = oursyay
