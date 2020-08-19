@@ -7,6 +7,7 @@
   <title>Pig Latin Translator</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
@@ -21,12 +22,18 @@
       <label for="userswords" class="display-4">Your text to be translated to Pig Latin.</label>
       <br>
       <br>
-      <input type="text" id="userswords" name="userswords">
+      <input type="text" id="userinput">
       <br>
       <br>
       <input type="submit" id="formsubmit" class="btn btn-primary"></input>
     </form>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <p class="h3"> In Pig Latin, your word is pronounced: <span id="translation"></span> </p>
   </div>
+
 </body>
 
 </html>
