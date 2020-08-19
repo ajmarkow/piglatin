@@ -5,12 +5,13 @@ const vowels = ["a", "e", "i", "o", "u"];
 
 //Code to test for words beginning 
 $(document).ready(function () {
-  $("#formsubmit").submit(function (event) {
+  $("form#formsubmit").submit(function (event) {
     event.preventDefault();
-    let userWord = ($('form#userinput').val());
+    let userWord = $("#userinput").val();
     let arrayOfInput = [];
     arrayOfInput.push(userWord);
-    const piglatin = arrayofinput.map(function (text) {
+    const pigLatin = arrayOfInput.map(function (text) {
+      console.log(pigLatin);
       if (/[aieou]/) {
         arrayOfInput.push("way");
         arrayOfInput.join((''));
@@ -26,7 +27,6 @@ $(document).ready(function () {
       }
       return (text);
     });
-    $("#translation").show;
-    console.log(arrayOfInput);
+    $("#translation").show();
   });
 });
