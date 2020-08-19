@@ -9,3 +9,5 @@ Expectation: PigLatinTranslation("squeal") = ealsquay
 
 Test: If word begins with y, y is treated as a consanant. 
 Expectation: PigLatinTranslation("yours") = oursyay
+
+Can jquery selectors be used with standard methods?
